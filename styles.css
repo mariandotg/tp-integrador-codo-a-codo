@@ -8,6 +8,14 @@
     background-color: #353A40;
 }
 
+.nav-link {
+    color: #353A40;
+}
+
+.nav-link:hover {
+    color: #FFFFFF !important;
+}
+
 .brand-logo {
     width: 82.5px;
     height: 37.5px;
