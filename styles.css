@@ -55,3 +55,38 @@
 .cta:hover {
     color: #0c7450 !important;
 }
+
+.landscape-info {
+    height: 400px;
+}
+
+.landscape-info img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.landscape {
+    background-color: #353a40;
+}
+
+.contact-form {
+  width: 52vw !important;
+}
+
+footer {
+    height: 80px;
+    background-image: linear-gradient(to right, #1c3643, #1d5271);
+}
+
+.footer-links {
+    font-size: 0.9rem !important;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font-weight: 400 !important;
+    justify-content: center;
+}
+  
+.footer-links:hover {
+    color: rgb(175, 175, 175) !important;
+}
+  
