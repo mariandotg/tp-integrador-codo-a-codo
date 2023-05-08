@@ -3,6 +3,49 @@
 }
 
 .brand-logo {
-    width: 110px;
-    height: 50px;
+    width: 82.5px;
+    height: 37.5px;
+}
+  
+.carousel-size {
+    height: calc(100vh - 80px);
+} 
+  
+.carousel-size img {
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    top: -130px;
+    width: 100vw;
+    height: calc(100vh + 50px);
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+}
+  
+.hero-paragraph {
+    justify-content: end;
+    text-align: end;
+    width: 50%;
+}
+
+.position {
+    position: absolute;
+    right: 200px;
+    top: 200px;
+}
+
+.btn-success {
+    background-color: #29a744 !important;
+}
+  
+.btn-success:hover {
+    background-color: #0c7450 !important;
+}
+
+.cta {
+    color: #27a442 !important;
+}
+
+.cta:hover {
+    color: #0c7450 !important;
 }
