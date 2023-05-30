@@ -72,40 +72,42 @@
       <p class="m-0">VENTA</p>
       <p class="fs-2 fw-semibold" id="Oradores">VALOR DE TICKET: $200.-</p>
     </div>
-    <div class="row mt-3">
-      <div class="col-6">
-        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
+    <form>
+      <div class="row mt-3">
+        <div class="col-6">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
           oninput="validateLetters(this)" />
-      </div>
-      <div class="col-6">
-        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+        </div>
+        <div class="col-6">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
           oninput="validateLetters(this)" />
+        </div>
       </div>
-    </div>
-    <div class="col-12 mt-3">
-      <input type="email" class="form-control" placeholder="Correo" aria-label="Correo" oninput="validateEmail(this)" />
-    </div>
-    <div class="row mt-3 lblCantCat">
-      <div class="col-6 mb-2">
-        <span class="">Cantidad</span>
+      <div class="col-12 mt-3">
+        <input type="email" class="form-control" pattern="/^[^\s]+@[^\s]+\.[^\s]+$/" placeholder="Correo" aria-label="Correo" />
       </div>
-      <div class="col-6 mb-2">
-        <span class="">Categoría</span>
+      <div class="row mt-3 lblCantCat">
+        <div class="col-6 mb-2">
+          <span class="">Cantidad</span>
+        </div>
+        <div class="col-6 mb-2">
+          <span class="">Categoría</span>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <input id="cantity" type="number" class="form-control" placeholder="Cantidad" value="0" aria-label="Cantidad"
+      <div class="row">
+        <div class="col-6">
+          <input id="cantity" type="number" class="form-control" placeholder="Cantidad" value="0" aria-label="Cantidad"
           min="1" max="10" step="1" />
+        </div>
+        <div class="col-6">
+          <select name="category" class="form-select" id="category">
+            <option value="student">Estudiante</option>
+            <option value="trainee">Trainee</option>
+            <option value="junior">Junior</option>
+          </select>
+        </div>
       </div>
-      <div class="col-6">
-        <select name="category" class="form-select" id="category">
-          <option value="student">Estudiante</option>
-          <option value="trainee">Trainee</option>
-          <option value="junior">Junior</option>
-        </select>
-      </div>
-    </div>
+    </form>
     <p class="px-4 py-3 bg-primary rounded-2 p-2 my-5 text-primary bg-opacity-25">Total a Pagar: $<span
         id="result"></span></p>
 

@@ -30,22 +30,10 @@ function reset() {
     const cantidadComprada = document.getElementById("cantity");
 
     resultContainer.textContent = ""
-    cantidadComprada.value = "";
+    cantidadComprada.value = 0;
 }
 
 function validateLetters(input) {
     var regex = /[^a-zA-Z\s]/g;
     input.value = input.value.replace(regex, "");
-}
-
-function validateEmail(input) {
-    var regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
-    var isValid = regex.test(input.value);
-    var atCount = input.value.split("@").length - 1;
-
-    if (!isValid || atCount > 1) {
-        input.setCustomValidity("Ingresa una dirección de correo electrónico válida");
-    } else {
-        input.setCustomValidity("");
-    }
 }
